@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  Roboto Condensed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="text-center bg-gradient-to-r from-[#ff0095] to-[#3d0dec] bg-clip-text text-transparent md:text-7xl text-5xl mt-10 font-bold">This is my first practice work</h1>
+    <div class="lg:mx-40 md:mx-20 mx-10 m-auto flex flex-col lg:flex-row justify-between gap-5">
+        <div class="card bg-[#b328c5] drop-shadow-lg text-neutral-content mt-10">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl">দ্রব্যমূল্যের দাম-১</h2>
+              <p id="price-1" class="text-7xl my-6">0</p>
+              <div class="card-actions justify-center gap-5">
+                <button id="growth-button-1" class="btn bg-yellow-400 px-16 text-3xl">বৃদ্ধি</button>
+                <button id="decrease-button-1" class="btn bg-green-400 px-16 text-3xl">হ্রাস</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#b66c27] text-neutral-content mt-10">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl">দ্রব্যমূল্যের দাম-২</h2>
+              <p id="price-2" class="text-7xl my-6">0</p>
+              <div class="card-actions justify-center gap-5">
+                <button id="growth-button-2" class="btn bg-yellow-400 px-16 text-3xl">বৃদ্ধি</button>
+                <button id="decrease-button-2" class="btn bg-green-400 px-16 text-3xl">হ্রাস</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-[#26bdc2] shadow-lg text-neutral-content mt-10">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-4xl">দ্রব্যমূল্যের দাম-৩</h2>
+              <p id="price-3" class="text-7xl my-6">15</p>
+              <div class="card-actions justify-center gap-5">
+                <button id="growth-button-3" class="btn bg-yellow-400 px-16 text-3xl">বৃদ্ধি</button>
+                <button id="decrease-button-3" class="btn bg-green-400 px-16 text-3xl">হ্রাস</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="text-center my-10">
+        <button id="reset-button" class="mx-10 m-auto shadow-2xl text-white bg-purple-400 border-black border-2 rounded-lg py-4 px-16 md:text-3xl text-3xl">সব পরিষ্কার করে দাও</button>
+    </div>
+
+
+    <script src="test.js"></script>
+</body>
+
+</html>
