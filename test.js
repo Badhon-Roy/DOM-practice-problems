@@ -138,4 +138,20 @@ document.getElementById("quote-btn").addEventListener("click", function(){
     p.innerText = quotes[randomQuotes].person;
 })
 
+ 
+const myButton = document.getElementById('dance');
+myButton.addEventListener('click', () => {
+    myButton.style.display = 'none';
+});
+
+myButton.addEventListener("click", function () {
+const audioMusic = document.getElementById("audio-music");
+audioMusic.play()
+const myElement = document.getElementById("images-section");
+myElement.className = "banner-section"
+myElement.style.backgroundImage = "url('https://i.pinimg.com/originals/2b/9d/f5/2b9df5c13804a6e5f12ecdd94691e9a6.gif?fbclid=IwAR1c1GcIcKKwqwUzDGkMdPkVi8-PRokdnY3Na-0YCuYMIDqpJ8qreJLlqI0')"
+myElement.style.backgroundRepeat = "no-repeat"
+
+})
+
 
